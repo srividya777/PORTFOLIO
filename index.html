@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sample Web Page!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+            <nav>
+                <ul class="nav-ele" id="dropdownClick">
+                    <li><a href="#index.html">HOME</a></li>
+                    <li><a href="#about-page">ABOUT</a></li>
+                    <li><a href="#Work-page">WORKS</a></li>
+                    <li><a href="#contact-page">CONTACT</a></li>
+                    <li class="nav-right"><a href="RESUME.pdf" attributes-list download ="optional-value" > RESUME</a></li>
+                    <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdowMenu()">&#9776;</a></li>
+                </ul>
+            </nav>
+
+            <script>
+                function dropdowMenu(){
+                    var x = document.getElementById("dropdownClick");
+                    if(x.className === "nav-ele"){
+                        x.className += " responsive";
+                    }
+                    else{
+                        x.className="nav-ele";
+                    }
+                }
+            </script>
+            <div class="bg">
+                <p class="ref">I am SRIVIDYA RAJASEKAR have a thought of</p><br>
+                <p>With the confidence<br>you have won before<br>you have started<br><br></p>
+                <button class="btn"><a href="#about-page">Get Started</a></button>
+            </div>
+
+            <div class="bg2" id="about-page">
+                <h1 class="aboutme">Who I am</h1><br><br><br>
+                <p class="intro">Hi, my name is <b>Srividya</b>. I am a <b>web developer</b> and I am very excited to work with web and <b>machine learning</b> projects. I have a management experience and have done projects. And also i have a knowledge in user experience designs using Adobe XD. I particularly enjoy the process of learning and exploring. I am sure that with all of you, I will achieve great results in the future. Besides work, I always keep engaging myself in problem solving environment that keeps enhance my knowledge and give the ways to find the new opportunities. I am the beginner to machine learning and did mini projects and stay focussed towards the destination, in every sunrise I used to boost myself there is a another chance to prove myself to the world!</p>
+             </div>
+
+             <div class="bg3" id="Work-page"><h1 class="bg3-heading">Works</h1><br><br>
+             <div class="flex-container">
+                <div class="flex-item"><img src="images/Handwritten.jpg" style="width:100%"><p><a href="https://github.com/srividya777/Handwritten-Digits-and-Character-Recognition-using-ML.git">Handwritten Digits and Character Recognition system</a></p></div>
+                <div class="flex-item"><img src="images/university.jpg" style="width:100%"><p><a href="https://github.com/srividya777/University-Admission-Eligibility-Predictor.git">University Admit Eligibility Predictor Using Machine Learning techniques</a></p></div>
+                <div class="flex-item"><img src="images/music.jpg" style="width:100%"><p><a href="https://github.com/srividya777/Emotion-based-music-recommendation-system.git">Emotion based customized music recommendation system using Deep Learning</a></p></div>
+             </div>
+             </div>
+             <div class="bg4" id="contact-page">
+                <h1 class="bg4-heading">Get In Touch</h1><br>
+                <form class="form-bg" action="https://formsubmit.co/a4a08344008223841e98e8db18bc6174" method="POST">
+                    <!--Honeyspot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                   
+                    <input type="email" placeholder="Enter your email here.." name="Email" required><br><br>
+                    
+                    <input type="text" placeholder="Enter your thoughts..." name="Comments" required><br><br>
+                    <br>
+                    <button class="bg4-btn" type="submit">Submit</button>
+                </form><br>
+                <h2 class="follow">Follow Me on</h2>
+                <div class="social-menu">
+                    <div class="social-btn"><a href="mailto:srividyarajasekar03@gmail.com?" subject="subject text"><img src="images/gmail.png"></a></div>
+                    <div class="social-btn"><a href="https://www.instagram.com/ra.nveer523/"><img src="images/instagram.png"></a></div>
+                    <div class="social-btn"><a href="https://www.linkedin.com/in/srividya-rajasekar-258b5821a/"><img src="images/linkedin.png"></a></div>
+                    <div class="social-btn"><a href="https://github.com/srividya777"><img src="images/github.png"></a></div>
+                </div><br>
+
+                
+            </div>
+
+
+             
+
+             
+             
+             
+             
+             
+
+            
+        
+        </body>
+    
+</html>
